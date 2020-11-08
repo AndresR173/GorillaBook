@@ -11,12 +11,14 @@ import Combine
 protocol FeedPresenter: class {
     func getFeed()
     func attachView(_ view: FeedViewDelegate)
+    func addPost(_ post: String, image: Data?, createDate: Date)
     var feed: [Feed] { get }
 }
 
 protocol FeedViewDelegate: class {
     func feedDidRefresh()
     func feedDidShowError(_ error: Error)
+    func feedDidInsertNewPost()
 }
 
 class FeedPresenterImpl {
@@ -29,6 +31,12 @@ class FeedPresenterImpl {
 }
 
 extension FeedPresenterImpl: FeedPresenter {
+    func addPost(_ post: String, image: Data?, createDate: Date) {
+        let post = Feed(id: 0, firstName: "Jane", lastName: "", post: post, timestamp: String(createDate.timeIntervalSince1970), image: nil)
+        feed.insert(post, at: 0)
+        view?.feedDidInsertNewPost()
+    }
+
     func getFeed() {
         service.getFeed()
             .mapError { [weak self] error -> Error in

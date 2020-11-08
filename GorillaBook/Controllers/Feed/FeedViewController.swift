@@ -38,11 +38,26 @@ private extension FeedViewController {
         customView.tableView.separatorStyle = .none
 
         customView.tableView.register(FeedTableViewCell.self, forCellReuseIdentifier: String(describing: FeedTableViewCell.self))
+
+        customView.createPostView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(createPost)))
+    }
+
+    @objc func createPost() {
+        let viewController = CreatePostViewController()
+        viewController.delegate = self
+        
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
 // MARK: - FeedViewDelegate
 extension FeedViewController: FeedViewDelegate {
+    func feedDidInsertNewPost() {
+        customView.tableView.beginUpdates()
+        customView.tableView.insertRows(at: [NSIndexPath(row: 0, section: 0) as IndexPath], with: .automatic)
+        customView.tableView.endUpdates()
+    }
+
     func feedDidShowError(_ error: Error) {
         let alert = UIAlertController(title: "Feed", message: error.localizedDescription, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default))
@@ -66,5 +81,12 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
         cell.feed = presenter.feed[indexPath.row]
 
         return cell
+    }
+}
+
+// MARK: - CreatePostDelegate
+extension FeedViewController: CreatePostDelegate {
+    func feedDidAddPost(_ post: String, image: Data?, date: Date) {
+        presenter.addPost(post, image: image, createDate: date)
     }
 }

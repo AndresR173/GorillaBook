@@ -26,6 +26,8 @@
 		BA1F44B52558575800FD705B /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F44B42558575800FD705B /* FeedTableViewCell.swift */; };
 		BA1F44BB25585AF700FD705B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = BA1F44BA25585AF700FD705B /* SDWebImage */; };
 		BA1F44C025585D2800FD705B /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F44BF25585D2800FD705B /* Double+Extensions.swift */; };
+		BA1F44EA255861ED00FD705B /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F44E8255861ED00FD705B /* CreatePostViewController.swift */; };
+		BA1F44EB255861ED00FD705B /* CreatePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA1F44E9255861ED00FD705B /* CreatePostViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		BA1F4499255847B500FD705B /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		BA1F44B42558575800FD705B /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		BA1F44BF25585D2800FD705B /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		BA1F44E8255861ED00FD705B /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		BA1F44E9255861ED00FD705B /* CreatePostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreatePostViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,7 @@
 		BA1F444A25583EA200FD705B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BA1F44C72558616C00FD705B /* CreatePost */,
 				BA1F445425583EC800FD705B /* Base */,
 				BA1F444B25583EAB00FD705B /* Feed */,
 				BA1F446225583FB500FD705B /* Navigation */,
@@ -246,6 +251,15 @@
 				BA1F4499255847B500FD705B /* FeedPresenter.swift */,
 			);
 			path = Prensenter;
+			sourceTree = "<group>";
+		};
+		BA1F44C72558616C00FD705B /* CreatePost */ = {
+			isa = PBXGroup;
+			children = (
+				BA1F44E8255861ED00FD705B /* CreatePostViewController.swift */,
+				BA1F44E9255861ED00FD705B /* CreatePostViewController.xib */,
+			);
+			path = CreatePost;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +373,7 @@
 			files = (
 				BA1F440125583A6500FD705B /* LaunchScreen.storyboard in Resources */,
 				BA1F43FE25583A6500FD705B /* Assets.xcassets in Resources */,
+				BA1F44EB255861ED00FD705B /* CreatePostViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +403,7 @@
 				BA1F443825583BC800FD705B /* ViewController+Extensions.swift in Sources */,
 				BA1F43F525583A6300FD705B /* AppDelegate.swift in Sources */,
 				BA1F448D2558455F00FD705B /* Feed.swift in Sources */,
+				BA1F44EA255861ED00FD705B /* CreatePostViewController.swift in Sources */,
 				BA1F44B52558575800FD705B /* FeedTableViewCell.swift in Sources */,
 				BA1F444D25583EBE00FD705B /* FeedViewController.swift in Sources */,
 				BA1F445B25583EFB00FD705B /* FeedView.swift in Sources */,
