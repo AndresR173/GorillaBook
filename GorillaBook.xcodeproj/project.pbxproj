@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BA1F43F525583A6300FD705B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F43F425583A6300FD705B /* AppDelegate.swift */; };
-		BA1F43F725583A6300FD705B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F43F625583A6300FD705B /* SceneDelegate.swift */; };
-		BA1F43F925583A6300FD705B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F43F825583A6300FD705B /* ViewController.swift */; };
-		BA1F43FC25583A6300FD705B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1F43FA25583A6300FD705B /* Main.storyboard */; };
 		BA1F43FE25583A6500FD705B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA1F43FD25583A6500FD705B /* Assets.xcassets */; };
 		BA1F440125583A6500FD705B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1F43FF25583A6500FD705B /* LaunchScreen.storyboard */; };
 		BA1F440C25583A6500FD705B /* GorillaBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F440B25583A6500FD705B /* GorillaBookTests.swift */; };
@@ -37,9 +34,6 @@
 /* Begin PBXFileReference section */
 		BA1F43F125583A6300FD705B /* GorillaBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GorillaBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1F43F425583A6300FD705B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA1F43F625583A6300FD705B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BA1F43F825583A6300FD705B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BA1F43FB25583A6300FD705B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA1F43FD25583A6500FD705B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA1F440025583A6500FD705B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA1F440225583A6500FD705B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,13 +93,8 @@
 		BA1F43F325583A6300FD705B /* GorillaBook */ = {
 			isa = PBXGroup;
 			children = (
-				BA1F43F425583A6300FD705B /* AppDelegate.swift */,
-				BA1F43F625583A6300FD705B /* SceneDelegate.swift */,
-				BA1F43F825583A6300FD705B /* ViewController.swift */,
-				BA1F43FA25583A6300FD705B /* Main.storyboard */,
-				BA1F43FD25583A6500FD705B /* Assets.xcassets */,
-				BA1F43FF25583A6500FD705B /* LaunchScreen.storyboard */,
-				BA1F440225583A6500FD705B /* Info.plist */,
+				BA1F443025583B2D00FD705B /* App */,
+				BA1F443425583B4800FD705B /* Resources */,
 			);
 			path = GorillaBook;
 			sourceTree = "<group>";
@@ -126,6 +115,24 @@
 				BA1F441825583A6500FD705B /* Info.plist */,
 			);
 			path = GorillaBookUITests;
+			sourceTree = "<group>";
+		};
+		BA1F443025583B2D00FD705B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BA1F43F425583A6300FD705B /* AppDelegate.swift */,
+				BA1F43FF25583A6500FD705B /* LaunchScreen.storyboard */,
+				BA1F440225583A6500FD705B /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BA1F443425583B4800FD705B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA1F43FD25583A6500FD705B /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +240,6 @@
 			files = (
 				BA1F440125583A6500FD705B /* LaunchScreen.storyboard in Resources */,
 				BA1F43FE25583A6500FD705B /* Assets.xcassets in Resources */,
-				BA1F43FC25583A6300FD705B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA1F43F925583A6300FD705B /* ViewController.swift in Sources */,
 				BA1F43F525583A6300FD705B /* AppDelegate.swift in Sources */,
-				BA1F43F725583A6300FD705B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +300,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BA1F43FA25583A6300FD705B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BA1F43FB25583A6300FD705B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BA1F43FF25583A6500FD705B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,6 +435,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KL5CTQ2N5S;
 				INFOPLIST_FILE = GorillaBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +455,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KL5CTQ2N5S;
 				INFOPLIST_FILE = GorillaBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
