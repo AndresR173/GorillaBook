@@ -5,7 +5,7 @@
 //  Created by Andres Felipe Rojas R. on 8/11/20.
 //
 
-import Foundation
+import UIKit
 
 struct Feed: Codable {
     let id: Int
