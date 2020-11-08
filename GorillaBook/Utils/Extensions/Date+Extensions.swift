@@ -7,11 +7,11 @@
 
 import Foundation
 
-extension DateFormatter {
-    public static var versionFormatter: DateFormatter {
+extension Date {
+    func getReadableDate() -> String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "MM/dd/yyyy"
+        formatter.dateFormat = "EEEE, MMMM d"
 
-        return formatter
+        return formatter.string(from: Date())
     }
 }

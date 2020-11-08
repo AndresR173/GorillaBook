@@ -12,7 +12,7 @@ protocol FeedService {
     func getFeed() -> AnyPublisher<[Feed], Error>
 }
 
-final class FeedServiceCient {
+final class FeedServiceClient {
     private let apiClient = APIClient()
 
     private func getFeedFromApi() -> AnyPublisher<[Feed], Error> {
@@ -31,7 +31,7 @@ final class FeedServiceCient {
     }
 }
 
-extension FeedServiceCient: FeedService {
+extension FeedServiceClient: FeedService {
     func getFeed() -> AnyPublisher<[Feed], Error> {
         return getFeedFromApi()
     }

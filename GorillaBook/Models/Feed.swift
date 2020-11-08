@@ -12,8 +12,12 @@ struct Feed: Codable {
     let firstName: String
     let lastName: String
     let post: String
-    let timestamp: Double
+    let timestamp: String
     let image: String?
+
+    var fullName: String {
+        return "\(firstName) \(lastName)"
+    }
 
     enum CodingKeys: String, CodingKey {
         case id

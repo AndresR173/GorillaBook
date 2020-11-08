@@ -26,6 +26,7 @@ class CustomNavigationController: UINavigationController {
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
         navigationBar.addSubview(imageView)
+
         NSLayoutConstraint.activate([
             imageView.widthAnchor.constraint(equalToConstant: 25),
             imageView.heightAnchor.constraint(equalToConstant: 25),
