@@ -18,6 +18,10 @@
 		BA1F445625583ED800FD705B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F445525583ED800FD705B /* BaseViewController.swift */; };
 		BA1F445B25583EFB00FD705B /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F445A25583EFB00FD705B /* FeedView.swift */; };
 		BA1F446425583FD000FD705B /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F446325583FD000FD705B /* CustomNavigationController.swift */; };
+		BA1F447D2558443F00FD705B /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F447C2558443F00FD705B /* FeedService.swift */; };
+		BA1F44822558448000FD705B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F44812558448000FD705B /* Constants.swift */; };
+		BA1F4487255844B400FD705B /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F4486255844B400FD705B /* ApiClient.swift */; };
+		BA1F448D2558455F00FD705B /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F448C2558455F00FD705B /* Feed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		BA1F445525583ED800FD705B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BA1F445A25583EFB00FD705B /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		BA1F446325583FD000FD705B /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		BA1F447C2558443F00FD705B /* FeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
+		BA1F44812558448000FD705B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BA1F4486255844B400FD705B /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		BA1F448C2558455F00FD705B /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +115,9 @@
 			children = (
 				BA1F443025583B2D00FD705B /* App */,
 				BA1F444A25583EA200FD705B /* Controllers */,
+				BA1F448B2558454800FD705B /* Models */,
 				BA1F443425583B4800FD705B /* Resources */,
+				BA1F447B2558442800FD705B /* Service */,
 				BA1F443525583BAB00FD705B /* Utils */,
 			);
 			path = GorillaBook;
@@ -153,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				BA1F443625583BB500FD705B /* Extensions */,
+				BA1F44812558448000FD705B /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -199,6 +210,23 @@
 				BA1F446325583FD000FD705B /* CustomNavigationController.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		BA1F447B2558442800FD705B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BA1F447C2558443F00FD705B /* FeedService.swift */,
+				BA1F4486255844B400FD705B /* ApiClient.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BA1F448B2558454800FD705B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA1F448C2558455F00FD705B /* Feed.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,12 +359,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA1F445625583ED800FD705B /* BaseViewController.swift in Sources */,
+				BA1F447D2558443F00FD705B /* FeedService.swift in Sources */,
 				BA1F443825583BC800FD705B /* ViewController+Extensions.swift in Sources */,
 				BA1F43F525583A6300FD705B /* AppDelegate.swift in Sources */,
+				BA1F448D2558455F00FD705B /* Feed.swift in Sources */,
 				BA1F444D25583EBE00FD705B /* FeedViewController.swift in Sources */,
 				BA1F445B25583EFB00FD705B /* FeedView.swift in Sources */,
 				BA1F444025583BE400FD705B /* Date+Extensions.swift in Sources */,
 				BA1F446425583FD000FD705B /* CustomNavigationController.swift in Sources */,
+				BA1F44822558448000FD705B /* Constants.swift in Sources */,
+				BA1F4487255844B400FD705B /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
