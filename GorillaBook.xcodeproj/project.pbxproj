@@ -12,6 +12,12 @@
 		BA1F440125583A6500FD705B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1F43FF25583A6500FD705B /* LaunchScreen.storyboard */; };
 		BA1F440C25583A6500FD705B /* GorillaBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F440B25583A6500FD705B /* GorillaBookTests.swift */; };
 		BA1F441725583A6500FD705B /* GorillaBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F441625583A6500FD705B /* GorillaBookUITests.swift */; };
+		BA1F443825583BC800FD705B /* ViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F443725583BC800FD705B /* ViewController+Extensions.swift */; };
+		BA1F444025583BE400FD705B /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F443F25583BE400FD705B /* Date+Extensions.swift */; };
+		BA1F444D25583EBE00FD705B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F444C25583EBE00FD705B /* FeedViewController.swift */; };
+		BA1F445625583ED800FD705B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F445525583ED800FD705B /* BaseViewController.swift */; };
+		BA1F445B25583EFB00FD705B /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F445A25583EFB00FD705B /* FeedView.swift */; };
+		BA1F446425583FD000FD705B /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F446325583FD000FD705B /* CustomNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +49,12 @@
 		BA1F441225583A6500FD705B /* GorillaBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GorillaBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1F441625583A6500FD705B /* GorillaBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GorillaBookUITests.swift; sourceTree = "<group>"; };
 		BA1F441825583A6500FD705B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA1F443725583BC800FD705B /* ViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extensions.swift"; sourceTree = "<group>"; };
+		BA1F443F25583BE400FD705B /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		BA1F444C25583EBE00FD705B /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		BA1F445525583ED800FD705B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BA1F445A25583EFB00FD705B /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		BA1F446325583FD000FD705B /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				BA1F443025583B2D00FD705B /* App */,
+				BA1F444A25583EA200FD705B /* Controllers */,
 				BA1F443425583B4800FD705B /* Resources */,
+				BA1F443525583BAB00FD705B /* Utils */,
 			);
 			path = GorillaBook;
 			sourceTree = "<group>";
@@ -133,6 +147,58 @@
 				BA1F43FD25583A6500FD705B /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		BA1F443525583BAB00FD705B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BA1F443625583BB500FD705B /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BA1F443625583BB500FD705B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BA1F443725583BC800FD705B /* ViewController+Extensions.swift */,
+				BA1F443F25583BE400FD705B /* Date+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BA1F444A25583EA200FD705B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BA1F445425583EC800FD705B /* Base */,
+				BA1F444B25583EAB00FD705B /* Feed */,
+				BA1F446225583FB500FD705B /* Navigation */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BA1F444B25583EAB00FD705B /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				BA1F444C25583EBE00FD705B /* FeedViewController.swift */,
+				BA1F445A25583EFB00FD705B /* FeedView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		BA1F445425583EC800FD705B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BA1F445525583ED800FD705B /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BA1F446225583FB500FD705B /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				BA1F446325583FD000FD705B /* CustomNavigationController.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +330,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1F445625583ED800FD705B /* BaseViewController.swift in Sources */,
+				BA1F443825583BC800FD705B /* ViewController+Extensions.swift in Sources */,
 				BA1F43F525583A6300FD705B /* AppDelegate.swift in Sources */,
+				BA1F444D25583EBE00FD705B /* FeedViewController.swift in Sources */,
+				BA1F445B25583EFB00FD705B /* FeedView.swift in Sources */,
+				BA1F444025583BE400FD705B /* Date+Extensions.swift in Sources */,
+				BA1F446425583FD000FD705B /* CustomNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +506,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KL5CTQ2N5S;
-				INFOPLIST_FILE = GorillaBook/Info.plist;
+				INFOPLIST_FILE = GorillaBook/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,7 +526,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KL5CTQ2N5S;
-				INFOPLIST_FILE = GorillaBook/Info.plist;
+				INFOPLIST_FILE = GorillaBook/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
